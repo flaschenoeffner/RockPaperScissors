@@ -1,0 +1,98 @@
+body{
+    background-color: antiquewhite;
+}
+main{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#heading{
+    text-align: center;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 1000;
+    margin-top: 3em;
+}
+#score ul{
+    font-family: sans-serif;
+}
+
+p{
+    font-family: 'Baloo', sans-serif;
+    height: 1em;
+}
+
+
+#playground{
+    display: flex;
+    border: 0.5em solid burlywood;
+    height: fit-content;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 1%;
+    
+}
+.pics{
+    position: relative;
+    flex-shrink: 1;
+    border: solid wheat 0.5em;
+}
+
+.pics img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pics .overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(225, 59, 192, 0.328);
+     /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    /*cursor: pointer; /* Add a pointer on hover */
+  }
+.pics .overlay2{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(59, 225, 84, 0.398);
+     /* Black background with opacity */
+    z-index: 2;
+}
+/*.pics:hover{
+    border: solid burlywood 0.5em; I think this hover thing is ugly
+}*/ 
+strong{
+    margin-top: 2em;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: larger;
+    display: flex;
+}
+#rounds{
+    margin-top: 0;
+}
+#score .points{
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+#wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    align-items: start;
+}
+
+#winner{
+    min-height: 3em;
+    font-size: medium;
+}
+

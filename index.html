@@ -6,15 +6,47 @@
     <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <h1>Rock Paper Scissor</h1>
-        <button id = "getComputerChoice">get computer choice</button>
-        
+       
     </header>
+
     <main>
+        <h1 id ="heading">Rock Paper Scissor</h1>
+        <p style="text-align: center">Click to play with a bot, there are 5 rounds</p>
+        <button id = "start">start</button>
+        <strong id = "rounds">Rounds: <div id = "round">0</div> / 5 </strong>
+        <div id = "playGround">
+            <!--playground generated via javascript-->
+            <div class="pics" id = "rock">
+                <div class="overlay"></div>
+                <div class="overlay2"></div>
+                <img src = "rock.png" >
+                
+            </div>
+            <div class ="pics" id  = "scissors">
+                <div class="overlay"></div>
+                <div class="overlay2"></div>
+                <img src="scissors.png">
+            </div>
+            <div class = "pics" id = "paper">
+                <div class="overlay"></div>
+                <div class="overlay2"></div>
+                <img src = "paper.png">
+              
+            </div>
+        </div>
         
+        <strong id = "score">Score: <div id = "userScore">0</div> / <div id = "pcScore">0</div> </strong>
+        <div id = "wrapper">
+            <div id = "winner"></div>
+            <button id="end">end</button>
+        </div>
+ 
+     
     </main>
     <footer>
        
