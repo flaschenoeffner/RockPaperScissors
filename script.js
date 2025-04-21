@@ -54,11 +54,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
         let round = document.getElementById("round");
         round.innerText = parseInt(round.innerText)+1;
+
         setTimeout(()=>{
             pcOverlays.forEach(overl => overl.style.opacity=0);
             userOverlays.forEach(overl=>overl.style.opacity=0);
         },3000);
-
+        if(round.innerText==6)
+            clear();
     }
     function getUserChoice(event){
         console.log(event.currentTarget.id);
@@ -93,6 +95,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     endButton.addEventListener("click", clear);
     function clear(){
         winner.innerHTML = "";
+        round.innerText=1;
         userScore.innerText = 0;
         pcScore.innerText = 0;
     }
