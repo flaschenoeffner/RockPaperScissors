@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="layout.css">
-    <script src="script.js" defer></script>
+    <script src="layout.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
 
 </head>
@@ -18,32 +20,30 @@
         <h1 id ="heading">Rock Paper Scissors</h1>
         
         <div id = "layout">
-            <strong id = "rounds">Rounds: <div id = "round">1</div> / 5 </strong>
+           
+            
+            <strong id = "score">Score: <strong id = "userScore">0</strong> / <strong id = "pcScore">0</strong> </strong>
+      
             <div id = "playGround">
                 <!--playground generated via javascript-->
                 <div class="pics" id = "rock">
-                    <div class="overlay"></div>
-                    <div class="overlay2"></div>
                     <img src = "rock.png" >
-
                 </div>
                 <div class ="pics" id  = "scissors">
-                    <div class="overlay"></div>
-                    <div class="overlay2"></div>
                     <img src="scissors.png">
                 </div>
                 <div class = "pics" id = "paper">
-                    <div class="overlay"></div>
-                    <div class="overlay2"></div>
                     <img src = "paper.png">
-                
                 </div>
             </div>
-
-            <strong id = "score">Score: <div id = "userScore">0</div> / <div id = "pcScore">0</div> </strong>
+            <div id = "buttons">
+                <button class = "btn" id="confirm">confirm</button>
+                
+            </div>
+            
             <div id = "wrapper">
                 <div id = "winner"></div>
-                <button class = "btn">end</button>
+                <a href="../index.html">back</a>
             </div>
  
         </div>

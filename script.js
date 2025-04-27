@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", ()=>{
+$(function(){
     //audio and click on start, html inserting 
     const buttons = document.querySelectorAll(".btn");
     
@@ -10,4 +10,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
         };
         
     }));
+   
 });
