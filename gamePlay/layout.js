@@ -75,19 +75,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
         console.log(event.currentTarget.id);
         switch(event.currentTarget.id){
             case "rock":
-                rockPic.style.border= "0.5em solid brown";
+                rockPic.style.border= "0.5em solid green";
                 scissorsPic.style.border = "";
                 paperPic.style.border = "";
                 userChoice = "rock";
                 break;
             case "scissors":
-                scissorsPic.style.border = "0.5em solid brown";
+                scissorsPic.style.border = "0.5em solid green";
                 rockPic.style.border="";
                 paperPic.style.border= "";
                 userChoice = "scissors";
                 break;
             case "paper":
-                paperPic.style.border = "0.5em solid brown";
+                paperPic.style.border = "0.5em solid green";
                 rockPic.style.border = "";
                 scissorsPic.style.border ="";
                 userChoice = "paper";
